@@ -1,8 +1,28 @@
+import PropTypes from 'prop-types';
 
-function PersonalForm() {
+function PersonalForm({personalInput, updateInput}) {
+
+    const updatePersonalData = (event) => {
+        let data = {...personalInput};
+        data[event.target.name] = event.target.value;
+        updateInput(data);
+    }
   return (
-    <div>PersonalForm</div>
+    <div>
+        <div>
+            <label htmlFor="name">Name:</label>
+            <input 
+            type="text"
+            name='name'
+            value={personalInput.name} 
+            onChange={(e) => updatePersonalData(e)}/>
+        </div>
+    </div>
   )
 }
 
+PersonalForm.propTypes={
+    personalInput:PropTypes.object,
+    updateInput:PropTypes.func
+}
 export default PersonalForm

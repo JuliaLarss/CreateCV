@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import PersonalForm from './personal/Personal';
+import PersonalForm from './personal/PersonalForm';
 
 function Form({personal, updatePersonal, updateStatus}) {
 
@@ -23,6 +23,7 @@ function Form({personal, updatePersonal, updateStatus}) {
   return (
     <div>
         <form onSubmit={SubmitForm}>
+            <h2>Personal information:</h2>
             <PersonalForm  
                 personalInput={personalInfo}
                 updateInput={updatePersonalInfo}/>

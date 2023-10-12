@@ -27,7 +27,7 @@ function App() {
   return (
     <>
     <Container personal={personalInfo}/>
-    <button type='button' onClick={() => {setViewForm(!viewForm)}}></button>
+    <button type='button' onClick={() => {setViewForm(!viewForm)}}>Edit</button>
     </>
   )
 }

@@ -4,6 +4,7 @@ import Personal from './personal/Personal'
 function Container({personal}) {
   return (
     <div>
+      <h2>Personal:</h2>
         <Personal personalData={personal}/>
     </div>
   )
