@@ -17,6 +17,22 @@ function PersonalForm({personalInput, updateInput}) {
             value={personalInput.name} 
             onChange={(e) => updatePersonalData(e)}/>
         </div>
+        <div>
+            <label htmlFor="email">Email:</label>
+            <input 
+            type="email"
+            name='email'
+            value={personalInput.email} 
+            onChange={(e) => updatePersonalData(e)}/>
+        </div>
+        <div>
+            <label htmlFor="phone">Phone:</label>
+            <input 
+            type="tel"
+            name='phone'
+            value={personalInput.phone} 
+            onChange={(e) => updatePersonalData(e)}/>
+        </div>
     </div>
   )
 }

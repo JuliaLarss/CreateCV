@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 function Personal({personalData}) {
   return (
     <div>
-        <h3>{personalData.name}</h3>
-        <p>{personalData.email}</p>
-        <p>{personalData.phone}</p>
+        <h3>Name: {personalData.name}</h3>
+        <p>Email: {personalData.email}</p>
+        <p>Phone: {personalData.phone}</p>
     </div>
   )
 }
