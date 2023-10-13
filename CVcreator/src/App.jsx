@@ -46,6 +46,7 @@ function App() {
       </div>
     )
   }
+  // == CV ==
   return (
     <div className='formContainer'>
       <Title />

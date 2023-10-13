@@ -3,12 +3,13 @@ import PropTypes from 'prop-types';
 
 function ExperienceForm({experienceInput, updateInput}) {
 
+    // Take the input values and give them an indec
     const handleFormChange = (index,event) => {
         let data = [...experienceInput];
         data[index][event.target.name]  = event.target.value;
         updateInput(data);
     }
-
+    
     const addInput = () => {
         let newFiels = {
             company:'', position:'', responsB:'', start:'',end:'',

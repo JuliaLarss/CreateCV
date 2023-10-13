@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 
 function Personal({personalData}) {
+
+  // Display the input values
   return (
     <div className='containerSection'>
         <h3><b>Name:</b> {personalData.name}</h3>

@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 function EducationForm({educationInput, updateInput}) {
 
+    // Take the input values
     const updateEducationData = (event) => {
         let data={...educationInput};
         data[event.target.name]=event.target.value;

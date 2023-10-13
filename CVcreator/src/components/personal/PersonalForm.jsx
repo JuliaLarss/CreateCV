@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 function PersonalForm({personalInput, updateInput}) {
 
+    // Take the input values
     const updatePersonalData = (event) => {
         let data = {...personalInput};
         data[event.target.name] = event.target.value;

@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 
 function Experience({experienceData}) {
+
+  // Display the input values
   return (
     <div className='containerSection'>
       {experienceData.map((elem, id) => {

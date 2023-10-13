@@ -3,6 +3,7 @@ import Personal from './personal/Personal'
 import Education from './education/Education';
 import Experience from './experience/Experience';
 
+// Finished CV
 function Container({personal, education, experience}) {
   return (
     <div className='container'>

@@ -10,10 +10,9 @@ function Form({
     experience, updateExperience, 
     updateStatus}) {
 
+    // States
     const [personalInfo, setPersonalInfo] = useState(personal);
-
     const [educationInfo, setEducationInfo] = useState(education);
-
     const [experienceInfo, setExperienceInfo] = useState(
         experience.length > 0 ? experience:
         [{ company:"", position:"", responsB:"",start:"",end:""}]
@@ -28,18 +27,18 @@ function Form({
         }
     }
 
+    // updateState
     const updatePersonalInfo = (newValue) => {
         setPersonalInfo(newValue);
     }
-
     const updateEducationInfo = (newValue) => {
         setEducationInfo(newValue);
     }
-
     const updateExperienceInfo = (newValue) => {
         setExperienceInfo(newValue);
     }
 
+    // Submit forms
     const SubmitForm=(e)=> {
         e.preventDefault;
         updatePersonal(personalInfo);
@@ -48,6 +47,7 @@ function Form({
         updateStatus();
     }
 
+    // Cancel form
     const cancelForm = () => {
         updateStatus();
     }

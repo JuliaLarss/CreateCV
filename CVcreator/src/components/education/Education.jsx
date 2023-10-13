@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 
 function Education({educationData}) {
+
+  // Display the input values
   return (
     <div className='containerSection'>
         <h3><b>School:</b> {educationData.school}</h3>
