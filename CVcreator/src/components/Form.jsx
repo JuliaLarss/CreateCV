@@ -53,7 +53,6 @@ function Form({
     }
 
   return (
-    <div>
         <form onSubmit={SubmitForm}>
             <h2>Personal information:</h2>
             <PersonalForm  
@@ -67,10 +66,12 @@ function Form({
             <ExperienceForm
                 experienceInput={experienceInfo}
                 updateInput={updateExperienceInfo} />
-            <input type="submit" />
-            <button type="button" onClick={cancelForm}>Cancel</button>
+            <div className="buttons">
+                <input type="submit" />
+                <button type="button" onClick={cancelForm}>Cancel</button>
+            </div>
         </form>
-    </div>
+
   )
 }
 

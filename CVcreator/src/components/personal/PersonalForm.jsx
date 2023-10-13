@@ -8,7 +8,7 @@ function PersonalForm({personalInput, updateInput}) {
         updateInput(data);
     }
   return (
-    <div>
+    <div className='personalContainer'>
         <div>
             <label htmlFor="name">Name:</label>
             <input 

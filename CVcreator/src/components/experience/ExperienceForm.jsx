@@ -22,57 +22,60 @@ function ExperienceForm({experienceInput, updateInput}) {
         updateInput(data);
     }
   return (
-    <div>
+    <div className='experienceContainer'>
         {experienceInput.map((elem, index) => {
             return (
                 <div key={index}>
-                    <div>
-                        <label htmlFor="company">Company:</label>
-                        <input 
-                        type="text"
-                        name='company'
-                        value={elem.company}
-                        onChange={(e) => handleFormChange(index,e)} />
-                    </div>
-                    <div>
-                        <label htmlFor="position">Position:</label>
-                        <input 
-                        type="text"
-                        name='position'
-                        value={elem.position}
-                        onChange={(e) => handleFormChange(index,e)} />
-                    </div>
-                    <div>
-                        <label htmlFor="responsB">Responsabilities:</label>
-                        <input 
-                        type="text"
-                        name='responsB'
-                        value={elem.responsB}
-                        onChange={(e) => handleFormChange(index,e)} />
-                    </div>
-                    <div className="dateContainer">
+                    <div className="formWrapper">
                         <div>
-                            <label htmlFor="start">Start:</label>
+                            <label htmlFor="company">Company:</label>
                             <input 
-                            type="date"
-                            name='start'
-                            value={elem.start}
+                            type="text"
+                            name='company'
+                            value={elem.company}
                             onChange={(e) => handleFormChange(index,e)} />
                         </div>
                         <div>
-                            <label htmlFor="end">End:</label>
+                            <label htmlFor="position">Position:</label>
                             <input 
-                            type="date"
-                            name='end'
-                            value={elem.end}
+                            type="text"
+                            name='position'
+                            value={elem.position}
                             onChange={(e) => handleFormChange(index,e)} />
                         </div>
+                        <div>
+                            <label htmlFor="responsB">Responsabilities:</label>
+                            <input 
+                            type="text"
+                            name='responsB'
+                            value={elem.responsB}
+                            onChange={(e) => handleFormChange(index,e)} />
+                        </div>
+                        <div className="dateContainer">
+                            <div>
+                                <label htmlFor="start">Start:</label>
+                                <input 
+                                type="date"
+                                name='start'
+                                value={elem.start}
+                                onChange={(e) => handleFormChange(index,e)} />
+                            </div>
+                            <div>
+                                <label htmlFor="end">End:</label>
+                                <input 
+                                type="date"
+                                name='end'
+                                value={elem.end}
+                                onChange={(e) => handleFormChange(index,e)} />
+                            </div>
+                        </div>
                     </div>
+                    
                     <button type="button" onClick={() => removeInput(index)}>Remove</button>
                 </div>
             )
         })}
-        <button type="button" onClick={addInput}>+ Add Experience</button>
+        <button id='addExp' type="button" onClick={addInput}>+ Add Experience</button>
     </div>
   )
 }

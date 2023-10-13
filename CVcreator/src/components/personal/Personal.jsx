@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function Personal({personalData}) {
   return (
-    <div>
+    <div className='containerSection'>
         <h3><b>Name:</b> {personalData.name}</h3>
         <p><b>Email:</b> {personalData.email}</p>
         <p><b>Phone:</b> {personalData.phone}</p>

@@ -5,7 +5,7 @@ import Experience from './experience/Experience';
 
 function Container({personal, education, experience}) {
   return (
-    <div>
+    <div className='container'>
       <h2>Personal:</h2>
         <Personal personalData={personal}/>
       <h2>Education:</h2>

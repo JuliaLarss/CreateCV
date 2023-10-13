@@ -9,7 +9,7 @@ function EducationForm({educationInput, updateInput}) {
     }
 
   return (
-    <div>
+    <div className='educationContainer'>
         <div>
             <label htmlFor="school">School:</label>
             <input 
