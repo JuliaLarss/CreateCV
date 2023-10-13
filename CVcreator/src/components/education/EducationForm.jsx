@@ -14,7 +14,7 @@ function EducationForm({educationInput, updateInput}) {
             <label htmlFor="school">School:</label>
             <input 
                 type="text"
-                name='school'
+                name="school"
                 value={educationInput.school}
                 onChange={(e) => {updateEducationData(e)}} />
         </div>
